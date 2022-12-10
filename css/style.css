@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* Global styling */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+.activeButton {
+	color: #F0D78C !important;
+}
+
+/* Header styling */
+.logoAnchor {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+}
+.logoAnchor:hover {
+	color: #F0D78C;
+}
+.logo {
+	width: 100%;
+	min-width: 100px;
+	max-width: 100px;
+}
+header {
+	padding: 20px 100px 20px 100px;
+	background-color: #F2F2F2;
+	font-size: 28px;
+	font-weight: bold;
+}
+header ul {
+	float: right;
+	list-style-type: none;
+}
+header ul a:hover {
+	color: #F0D78C;
+}
+header ul li {
+	display: inline-block;
+	padding: 20px;
+	line-height: 75px;
+}
+header a {
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+
+/* Homepage Main Grid 1 styling */
+#homepageMainGrid1 {
+	padding: 50px 100px 50px 100px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 5px;
+	background-color: #F2F2F2;
+}
+#homepageMainGrid1 div {
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.homepageMainGrid1Image1 img {
+	width: 100%;
+	max-width: 100%;
+	min-width: 100px;
+}
+.homepageMainGrid1Title {
+	color: #4F81C7;
+	font-size: 50px;
+	text-align: center;
+	padding: 10px;
+	font-weight: bold;
+}
+.bookButton {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	background-color: #64C4ED;
+	padding: 20px;
+	border-radius: 30px;
+	font-size: 30px;
+	font-weight: bold;
+	margin: 50px;
+	transition: all 0.6s;
+}
+.bookButton:hover {
+	color: #F0D78C;
+	transform: scale(1.2);
+	transition-duration: 0.6s;
+}
+
+/* Homepage Main Grid 2 styling */
+#homepageMainGrid2 {
+	padding: 50px 100px 50px 100px;
+	border-top: 2px solid #999999;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+}
+#homepageMainGrid2 div {
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.homepageMainGrid2Image1 img, .homepageMainGrid2Image2 img, .homepageMainGrid2Image3 img {
+	width: 40%;
+	max-width: 100%;
+	min-width: 100px;
+	border-radius: 5px;
+}
+.homepageMainGrid2Title {
+	font-weight: bold;
+	margin: 10px;
+	font-size: 30px;
+	color: #4F81C7;
+}
+.homepageMainGrid2Text {
+	padding: 10px;
+	font-size: 18px;
+	text-align: center;
+}
+
+/* Homepage Main Grid 3 styling */
+#homepageMainGrid3 {
+	border-top: 2px solid #999999;
+	padding: 50px 100px 50px 100px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 5px;
+	background-color: #F2F2F2;
+}
+#homepageMainGrid3Images {
+	display: grid;
+	grid-template-areas: "homepageMainGrid3Image1 homepageMainGrid3Image1 homepageMainGrid3Image1 homepageMainGrid3Image2 homepageMainGrid3Image2 homepageMainGrid3Image2"
+						 "homepageMainGrid3Image3 homepageMainGrid3Image3 homepageMainGrid3Image3 homepageMainGrid3Image3 homepageMainGrid3Image3 homepageMainGrid3Image3";
+	grid-gap: 10px;
+}
+.homepageMainGrid3Image1 {
+	grid-area: homepageMainGrid3Image1;
+}
+.homepageMainGrid3Image2 {
+	grid-area: homepageMainGrid3Image2;
+}
+.homepageMainGrid3Image3 {
+	grid-area: homepageMainGrid3Image3;
+}
+.homepageMainGrid3Image1 img, .homepageMainGrid3Image2 img, .homepageMainGrid3Image3 img {
+	width: 100%;
+	max-width: 100%;
+	min-width: 200px;
+	border-radius: 5px;
+}
+#homepageMainGrid3 article {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#homepageMainGrid3 article h2 {
+	color: #4F81C7;
+	font-size: 60px;
+	text-align: center;
+	padding: 10px;
+}
+#homepageMainGrid3 article p {
+	padding: 10px;
+	font-size: 20px;
+	text-align: center;
+}
+
+/* Footer styling */
+footer {
+	background: rgba(79,129,199, 0.8);
+	border-top: 2px solid #999999;
+	padding: 10px;
+}
+footer i.fa {
+	font-size: 26px;
+	margin: 5px;
+}
+footer ul {
+	list-style-type: none;
+	padding: 0;
+}
+.footerGrid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	text-align: center;
+	margin: 15px;
+}
+.otherLinks a, .socialMedia a, .contactUs a {
+	text-decoration: none;
+	color: white;
+}
+.otherLinks a:hover, .socialMedia a:hover, .contactUs a:hover, .policyAndConditions a:hover {
+	color: #F0D78C;
+}
+.otherLinks li, .socialMedia li, .contactUs li {
+	margin: 5px;
+	font-size: 20px;
+}
+.footerTitle {
+	font-weight: bold;
+	margin: 10px;
+	font-size: 30px;
+	color: white;
+}
+.policyAndConditions {
+	text-align: center;
+}
+.policyAndConditions ul {
+	display: inline-flex;
+	flex-direction: row;
+}
+.policyAndConditions li {
+	padding: 10px;
+	font-size: 14px;
+}
+.policyAndConditions a {
+	text-decoration: none;
+	color: black;
+	font-weight: 500;
+}
+
+/* Personal data policy, Trading Conditions and Subscription Conditions pages styling */
+.personalDataPolicyBox {
+	padding: 50px 100px 50px 100px;
+	border-top: 2px solid #999999;
+	background-color: #F2F2F2;
+	text-align: center;
+}
+.personalDataPolicyTitle {
+	font-weight: bold;
+	margin: 5px;
+	font-size: 30px;
+	color: #4F81C7;
+}
+.personalDataPolicyTitle2 {
+	font-weight: bold;
+	margin: 10px;
+	font-size: 24px;
+	color: black;
+}
+.personalDataPolicyBox ul {
+	list-style-type: none;
+	padding: 0;
+	font-size: 18px;
+}
+
+/* Our Team page styling */
+#ourTeamMainGrid1 {
+	padding: 50px 100px 50px 100px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+	background-color: #F2F2F2;
+}
+#ourTeamMainGrid1 div {
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+    box-shadow: 0 0 5px 0 #999999;
+}
+.ourTeamMainGrid1Image1 img, .ourTeamMainGrid1Image2 img, .ourTeamMainGrid1Image3 img {
+	width: 40%;
+	max-width: 100%;
+	min-width: 100px;
+	max-height: 220px;
+	margin-top: 40px;
+}
+.ourTeamMainGrid1Title {
+	margin: 10px 10px 0 10px;
+	font-size: 26px;
+}
+.ourTeamMainGrid1Title2 {
+	font-size: 16px;
+	font-style: italic;
+	text-align: center;
+}
+.ourTeamMainGrid1Text {
+	font-weight: 500;
+	padding: 30px;
+	font-size: 18px;
+	text-align: center;
+}
+#ourTeamMainGrid1 ul {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin-bottom: 20px;
+}
+#ourTeamMainGrid1 li {
+	padding: 10px;
+}
+#ourTeamMainGrid1 i.fa {
+	font-size: 36px;
+	margin: 5px;
+}
+#ourTeamMainGrid1 a {
+	text-decoration: none;
+	color: #4F81C7;
+}
+#ourTeamMainGrid1 a:hover {
+	color: #F0D78C;
+}
+
+/* Schedule page styling */
+#scheduleMainGrid1 {
+	padding: 50px 100px 5px 100px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+	background-color: #F2F2F2;
+	text-align: center;
+}
+.scheduleMainGrid1Box, .scheduleMainGrid2Box1, .scheduleMainGrid2Box2 {
+	background-color: white;
+    box-shadow: 0 0 5px 0 #999999;
+    margin: 10px;
+}
+.scheduleMainGrid1subGrid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.scheduleMainGridTitle {
+	font-weight: bold;
+	font-size: 24px;
+	text-align: left;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+}
+.scheduleMainGrid1subGrid a {
+	text-decoration: none;
+	color: black;
+	text-align: right;
+	padding: 20px;
+	font-weight: 500;
+}
+.scheduleMainGrid1subGrid i.fa {
+	font-size: 40px;
+	margin: 5px;
+	color: #4F81C7;
+}
+.scheduleMainGrid1subGrid a i.fa:hover {
+	color: #F0D78C;
+}
+.scheduleMainGridTime {
+	margin: 20px;
+	font-size: 24px;
+}
+#scheduleMainGrid2 {
+	text-align: center;
+	padding: 5px 100px 50px 100px;
+	grid-gap: 10px;
+	background-color: #F2F2F2;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+/* Prices page styling */
+#pricesMainGrid1 {
+	padding: 50px 100px 50px 100px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 5px;
+	background-color: #F2F2F2;
+}
+#pricesMainGrid2, #pricesMainGrid3 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 5px;
+}
+#pricesMainGrid2 {
+	padding: 50px 100px 15px 100px;
+}
+#pricesMainGrid3 {
+	padding: 15px 100px 50px 100px;
+}
+.blueText {
+	color: #4F81C7;
+}
+.pricesMainGridDiscount {
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
+	padding: 0 100px 50px 100px;
+}
+#pricesMainGrid4 , #pricesMainGrid5 {
+	padding: 25px 100px 25px 100px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 5px;
+}
+
+#pricesMainGrid1 div, #pricesMainGrid2 div, #pricesMainGrid3 div, #pricesMainGrid4 div, #pricesMainGrid5 div {
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.pricesMainGrid1Image img, .pricesMainGrid2Image img, .pricesMainGrid3Image img{
+	width: 100%;
+	max-width: 90%;
+	min-width: 100px;
+	border-radius: 5px;
+}
+.pricesMainGrid4Image img, .pricesMainGrid5Image img{
+	width: 100%;
+	max-width: 50%;
+	min-width: 100px;
+	border-radius: 5px;
+}
+#pricesMainScrapbook {
+	font-size: 30px;
+	text-align: center;
+	padding: 50px;
+	font-weight: 600;
+	background-color: #F2F2F2;
+	padding: 20px 100px 20px 100px;
+}
+#pricesMainScrapbook p {
+	font-style: italic;
+}
+.pricesMainGridTitle {
+	color: #4F81C7;
+	font-size: 50px;
+	text-align: center;
+	padding: 10px;
+	font-weight: bold;
+}
+.pricesMainOffers {
+	color: #4F81C7;
+	font-size: 30px;
+	text-align: center;
+	padding: 50px;
+	font-weight: bold;
+	background-color: #F2F2F2;
+}
+.pricesMainGrid2Card {
+	border: 5px solid #4F81C7;
+	border-radius: 5px;
+	background-color: white;
+    box-shadow: 0 0 5px 0 #999999;
+    margin: 10px;
+}
+.pricesMainGridText {
+	font-size: 30px;
+	font-weight: 400;
+	padding: 10px;
+}
+.pricesMainGridPrice {
+	font-size: 30px;
+	font-weight: bold;
+	padding: 10px;
+}
+.bookButton2 {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	background-color: #64C4ED;
+	padding: 20px;
+	border-radius: 30px;
+	font-size: 30px;
+	font-weight: bold;
+	margin: 20px;
+	transition: all 0.6s;
+}
+.bookButton2:hover {
+	color: #F0D78C;
+	transform: scale(1.2);
+	transition-duration: 0.6s;
+}
+
+.pricesMainReviewsTitle {
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
+	padding: 50px 100px 50px 100px;
+}
+.pricesMainReviewsGrid {
+	padding: 0 100px 50px 100px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 5px;
+}
+.pricesMainReviewsGrid div {
+	padding: 25px;
+	border: 1px solid black;
+	border-radius: 50px;
+	background-color: #F2F2F2;
+    box-shadow: 0 0 5px 0 #999999;
+    margin: 10px;
+}
+.pricesMainReviewsName {
+	font-size: 26px;
+	font-weight: bold;
+	padding: 10px 0 10px 0;
+}
+.pricesMainReviewsReview {
+	font-weight: 500;
+	font-style: italic;
+	padding: 10px;
+}
+.pricesMainReviewsStars {
+	color: orange;
+	text-align: right;
+	padding: 10px 10px 0 10px;
+}
+.pricesMainReviewsStars i.fa {
+	font-size: 30px;
+}
+
+/* Media queries */
+@media screen and (max-width: 1250px) {
+	header {
+		font-size: 20px;
+		padding: 20px 50px 20px 50px;
+	}
+	#homepageMainGrid1, #homepageMainGrid2, #homepageMainGrid3, footer, #pricesMainGrid1, #pricesMainGrid2, #pricesMainGrid3, #pricesMainGrid4, #pricesMainGrid5,
+	 .pricesMainGridDiscount, .pricesMainOffers, .pricesMainScrapbook, .pricesMainReviews, .pricesMainReviewsGrid, #scheduleMainGrid1, #scheduleMainGrid2, #ourTeamMainGrid1, .personalDataPolicyBox {
+		padding: 20px 50px 20px 50px;
+	}
+	.homepageMainGrid1Title {
+		font-size: 30px;
+	}
+	.homepageMainGrid2Title, .footerTitle, .pricesMainGridText, .pricesMainGridPrice, .personalDataPolicyTitle{
+		font-size: 24px;
+	}
+	.homepageMainGrid2Text, .ourTeamMainGrid1Title2, .ourTeamMainGrid1Text {
+		font-size: 16px;
+	}
+	#homepageMainGrid3 article h2, .pricesMainGridTitle {
+		font-size: 40px;
+	}
+	#homepageMainGrid3 article p, .otherLinks li, .socialMedia li, .contactUs li, .scheduleMainGridTitle, .scheduleMainGridTime, .ourTeamMainGrid1Title, .personalDataPolicyTitle2 {
+		font-size: 18px;
+	}
+	.policyAndConditions li {
+		font-size: 10px;
+	}
+	footer i.fa {
+	font-size: 18px;
+	}
+}
+@media screen and (max-width: 900px) {
+	header ul {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+	header ul li {
+		line-height: 25px;
+	}
+	#homepageMainGrid1, #homepageMainGrid2, #homepageMainGrid3, .footerGrid, #pricesMainGrid1, .pricesMainReviewsGrid, #pricesMainGrid2, #pricesMainGrid3, #pricesMainGrid4, 
+	#pricesMainGrid5, #scheduleMainGrid1, #scheduleMainGrid2 {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.homepageMainGrid2Title, .bookButton, .bookButton {
+		font-size: 28px;
+	}
+	.homepageMainGrid2Text,  {
+		font-size: 18px;
+	}
+	.homepageMainGrid3Image1 img, .homepageMainGrid3Image2 img, .homepageMainGrid3Image3 img {
+		min-width: 100px;
+	}
+	.footerGrid {
+		grid-gap: 20px;
+	}
+}
+@media screen and (max-width: 700px) {
+	header ul {
+		float: none;
+		text-align: center;
+		padding: 0;
+	}
+	.logoAnchor {
+		display: flex;
+	}
+	#ourTeamMainGrid1 {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.ourTeamMainGrid1Image1 img, .ourTeamMainGrid1Image2 img, .ourTeamMainGrid1Image3 img {
+		max-height: 90%;
+	}
+}
+@media screen and (max-width: 525px) {
+	header ul {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
